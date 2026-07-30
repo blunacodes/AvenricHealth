@@ -1,0 +1,15 @@
+uuid: 1998ae5f-691e-4eea-bd9a-ae425177bcea
+langcode: en
+status: true
+dependencies: {  }
+name: hero
+label: 'Hero (1600x600 crop)'
+effects:
+  4a1c8942-3885-4e64-ac9d-567aa4f2dbcf:
+    uuid: 4a1c8942-3885-4e64-ac9d-567aa4f2dbcf
+    id: image_scale_and_crop
+    weight: null
+    data:
+      width: 1600
+      height: 600
+      anchor: center-center

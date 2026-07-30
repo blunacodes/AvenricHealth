@@ -1,0 +1,18 @@
+uuid: 28e7b14b-d574-471b-a8fe-d189fa31b372
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_accepting_patients
+field_name: field_accepting_patients
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

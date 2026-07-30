@@ -1,0 +1,22 @@
+uuid: d9a0530e-4b29-4056-b105-7dc6b946826f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.health_resource
+  module:
+    - text
+id: node.health_resource.field_summary
+field_name: field_summary
+entity_type: node
+bundle: health_resource
+label: Summary
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

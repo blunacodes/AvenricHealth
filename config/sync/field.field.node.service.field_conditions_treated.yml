@@ -1,0 +1,19 @@
+uuid: f7dc5668-8d60-4f10-b18c-793c64160da3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_conditions_treated
+    - node.type.service
+id: node.service.field_conditions_treated
+field_name: field_conditions_treated
+entity_type: node
+bundle: service
+label: 'Conditions Treated'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

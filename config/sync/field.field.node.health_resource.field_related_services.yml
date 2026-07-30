@@ -1,0 +1,24 @@
+uuid: 967fa0bc-fa24-477d-9de9-4aeb2d036b1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_services
+    - node.type.health_resource
+    - node.type.service
+id: node.health_resource.field_related_services
+field_name: field_related_services
+entity_type: node
+bundle: health_resource
+label: 'Related Services'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      service: service
+field_type: entity_reference

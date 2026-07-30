@@ -1,0 +1,19 @@
+uuid: f567085b-7430-4f79-ab29-0cd7b281c28f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_professional_title
+    - node.type.provider
+id: node.provider.field_professional_title
+field_name: field_professional_title
+entity_type: node
+bundle: provider
+label: 'Professional Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,150 @@
+uuid: 1ee5b4ec-63b5-42d3-8998-c697096a4452
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.health_resource.body
+    - field.field.node.health_resource.field_documents
+    - field.field.node.health_resource.field_featured_image
+    - field.field.node.health_resource.field_related_providers
+    - field.field.node.health_resource.field_related_services
+    - field.field.node.health_resource.field_reviewed_date
+    - field.field.node.health_resource.field_reviewer
+    - field.field.node.health_resource.field_seo_description
+    - field.field.node.health_resource.field_summary
+    - field.field.node.health_resource.field_topic
+    - node.type.health_resource
+  module:
+    - datetime
+    - media_library
+    - path
+    - text
+id: node.health_resource.default
+targetEntityType: node
+bundle: health_resource
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_documents:
+    type: media_library_widget
+    weight: 129
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_featured_image:
+    type: media_library_widget
+    weight: 128
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_related_providers:
+    type: entity_reference_autocomplete
+    weight: 127
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_related_services:
+    type: entity_reference_autocomplete
+    weight: 126
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_reviewed_date:
+    type: datetime_default
+    weight: 124
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reviewer:
+    type: string_textfield
+    weight: 125
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_seo_description:
+    type: string_textarea
+    weight: 130
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_summary:
+    type: text_textarea
+    weight: 122
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_topic:
+    type: entity_reference_autocomplete
+    weight: 123
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

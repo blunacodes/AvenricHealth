@@ -1,0 +1,11 @@
+uuid: d324e2c3-957b-411e-8189-04226b6da82b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Health Resource'
+type: health_resource
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,24 @@
+uuid: 212eb798-c842-4006-afc8-e0e88120e089
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured_image
+    - media.type.image
+    - node.type.health_resource
+id: node.health_resource.field_featured_image
+field_name: field_featured_image
+entity_type: node
+bundle: health_resource
+label: 'Featured Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

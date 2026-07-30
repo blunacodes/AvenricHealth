@@ -1,0 +1,24 @@
+uuid: 7413be00-125d-4d20-b61f-3f0377868dd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_locations
+    - node.type.location
+    - node.type.provider
+id: node.provider.field_related_locations
+field_name: field_related_locations
+entity_type: node
+bundle: provider
+label: 'Related Locations'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      location: location
+field_type: entity_reference

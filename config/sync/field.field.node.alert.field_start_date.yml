@@ -1,0 +1,21 @@
+uuid: bd4f248c-f6bc-45de-ae7f-49d720cf0707
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_start_date
+    - node.type.alert
+  module:
+    - datetime
+id: node.alert.field_start_date
+field_name: field_start_date
+entity_type: node
+bundle: alert
+label: 'Start Date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,15 @@
+uuid: 1d9b11d2-f88b-4125-b99b-2caee10cfb64
+langcode: en
+status: true
+dependencies: {  }
+name: avatar
+label: 'Avatar (300x300 crop)'
+effects:
+  96981c94-0101-49d5-833f-420982b7c96b:
+    uuid: 96981c94-0101-49d5-833f-420982b7c96b
+    id: image_scale_and_crop
+    weight: null
+    data:
+      width: 300
+      height: 300
+      anchor: center-center

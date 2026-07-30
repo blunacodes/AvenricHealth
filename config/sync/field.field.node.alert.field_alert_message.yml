@@ -1,0 +1,22 @@
+uuid: 0b0cd487-e86f-4892-8ac9-bce8291582ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alert_message
+    - node.type.alert
+  module:
+    - text
+id: node.alert.field_alert_message
+field_name: field_alert_message
+entity_type: node
+bundle: alert
+label: 'Alert Message'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

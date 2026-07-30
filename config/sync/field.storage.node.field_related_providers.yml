@@ -1,0 +1,19 @@
+uuid: 1ddb116c-85d6-4a0a-b75a-0e0f6f441966
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_related_providers
+field_name: field_related_providers
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

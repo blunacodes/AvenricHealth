@@ -1,0 +1,11 @@
+uuid: be46932a-7eab-40cf-8e40-5e71b91f6309
+langcode: en
+status: true
+dependencies: {  }
+name: Alert
+type: alert
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

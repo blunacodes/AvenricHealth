@@ -1,0 +1,150 @@
+uuid: f0145cab-29f0-42c0-8335-829470f45ae7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.provider.field_accepting_patients
+    - field.field.node.provider.field_biography
+    - field.field.node.provider.field_certifications
+    - field.field.node.provider.field_credentials
+    - field.field.node.provider.field_education
+    - field.field.node.provider.field_languages
+    - field.field.node.provider.field_phone
+    - field.field.node.provider.field_professional_title
+    - field.field.node.provider.field_profile_image
+    - field.field.node.provider.field_related_locations
+    - field.field.node.provider.field_related_services
+    - field.field.node.provider.field_seo_description
+    - field.field.node.provider.field_specialties
+    - field.field.node.provider.field_telehealth
+    - node.type.provider
+  module:
+    - text
+    - user
+id: node.provider.default
+targetEntityType: node
+bundle: provider
+mode: default
+content:
+  field_accepting_patients:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_biography:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_certifications:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_credentials:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_education:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_languages:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_phone:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_professional_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+      link_rel: canonical
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_profile_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_related_locations:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_related_services:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 114
+    region: content
+  field_seo_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  field_specialties:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_telehealth:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

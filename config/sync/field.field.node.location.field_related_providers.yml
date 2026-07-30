@@ -1,0 +1,24 @@
+uuid: e75ef264-2b50-487c-9023-64299483ecb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_providers
+    - node.type.location
+    - node.type.provider
+id: node.location.field_related_providers
+field_name: field_related_providers
+entity_type: node
+bundle: location
+label: 'Related Providers'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      provider: provider
+field_type: entity_reference

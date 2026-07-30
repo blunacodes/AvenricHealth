@@ -1,0 +1,23 @@
+uuid: f2ca7d12-3d5a-4541-a3aa-ea5f636adee1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.service
+  module:
+    - node
+id: service
+label: Service
+type: 'canonical_entities:node'
+pattern: '/services/[node:title]'
+selection_criteria:
+  11b085e4-e8e6-4d3e-ac1b-f8469fba61b0:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      service: service
+selection_logic: and
+weight: 0
+relationships: {  }

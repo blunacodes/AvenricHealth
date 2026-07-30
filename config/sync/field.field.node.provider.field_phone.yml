@@ -1,0 +1,19 @@
+uuid: 47017030-dbf8-4350-ae93-b4f0a168be0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone
+    - node.type.provider
+id: node.provider.field_phone
+field_name: field_phone
+entity_type: node
+bundle: provider
+label: Phone
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

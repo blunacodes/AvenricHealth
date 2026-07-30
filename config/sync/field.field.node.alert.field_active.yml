@@ -1,0 +1,21 @@
+uuid: 1e9515b4-f562-403c-b431-96ef9c504818
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_active
+    - node.type.alert
+id: node.alert.field_active
+field_name: field_active
+entity_type: node
+bundle: alert
+label: 'Active Status'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

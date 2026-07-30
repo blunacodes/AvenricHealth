@@ -1,0 +1,21 @@
+uuid: 381360e2-6656-4dff-ba79-dba8337a9607
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telehealth
+    - node.type.provider
+id: node.provider.field_telehealth
+field_name: field_telehealth
+entity_type: node
+bundle: provider
+label: 'Telehealth Available'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

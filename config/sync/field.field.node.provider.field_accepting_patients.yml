@@ -1,0 +1,21 @@
+uuid: b8246590-90bd-49ff-a1a3-68891457e6d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accepting_patients
+    - node.type.provider
+id: node.provider.field_accepting_patients
+field_name: field_accepting_patients
+entity_type: node
+bundle: provider
+label: 'Accepting New Patients'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

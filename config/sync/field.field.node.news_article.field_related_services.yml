@@ -1,0 +1,24 @@
+uuid: a4eede16-93c5-4d71-8808-fce0826a0f7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_services
+    - node.type.news_article
+    - node.type.service
+id: node.news_article.field_related_services
+field_name: field_related_services
+entity_type: node
+bundle: news_article
+label: 'Related Services'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      service: service
+field_type: entity_reference

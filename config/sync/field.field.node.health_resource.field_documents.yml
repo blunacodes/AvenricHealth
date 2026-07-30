@@ -1,0 +1,24 @@
+uuid: 0370cfd6-ffa2-4327-98c4-c71bc519941c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_documents
+    - media.type.document
+    - node.type.health_resource
+id: node.health_resource.field_documents
+field_name: field_documents
+entity_type: node
+bundle: health_resource
+label: 'Downloadable Documents'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 41e716d1-4959-41bd-b7c7-6fd938f2e52c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.health_resource
+  module:
+    - node
+id: health_resource
+label: 'Health Resource'
+type: 'canonical_entities:node'
+pattern: '/health-resources/[node:title]'
+selection_criteria:
+  c8a72763-3bf2-40e7-88a3-0c52abf096ee:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      health_resource: health_resource
+selection_logic: and
+weight: 0
+relationships: {  }

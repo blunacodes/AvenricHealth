@@ -1,0 +1,21 @@
+uuid: e0469222-a7c3-4182-bc34-6cc04918ae30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reviewed_date
+    - node.type.health_resource
+  module:
+    - datetime
+id: node.health_resource.field_reviewed_date
+field_name: field_reviewed_date
+entity_type: node
+bundle: health_resource
+label: 'Reviewed Date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

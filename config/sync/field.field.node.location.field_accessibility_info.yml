@@ -1,0 +1,22 @@
+uuid: fcac51ec-b541-47e0-8466-edee5179c565
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accessibility_info
+    - node.type.location
+  module:
+    - text
+id: node.location.field_accessibility_info
+field_name: field_accessibility_info
+entity_type: node
+bundle: location
+label: 'Accessibility Information'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

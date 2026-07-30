@@ -1,0 +1,22 @@
+uuid: e3648690-2e69-4fb6-96e3-3804ec17469c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_parking_info
+    - node.type.location
+  module:
+    - text
+id: node.location.field_parking_info
+field_name: field_parking_info
+entity_type: node
+bundle: location
+label: 'Parking Information'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

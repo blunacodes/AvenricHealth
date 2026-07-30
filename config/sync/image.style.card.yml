@@ -1,0 +1,15 @@
+uuid: 19ed9093-67e6-4e80-9b71-f3dcdb15f814
+langcode: en
+status: true
+dependencies: {  }
+name: card
+label: 'Card (480x320 crop)'
+effects:
+  4e9d973f-59c9-4fb5-b16d-2521b3a72b82:
+    uuid: 4e9d973f-59c9-4fb5-b16d-2521b3a72b82
+    id: image_scale_and_crop
+    weight: null
+    data:
+      width: 480
+      height: 320
+      anchor: center-center

@@ -1,0 +1,19 @@
+uuid: 88e065c7-6ac0-4ef2-b01e-2c88ba8974fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_postal_code
+    - node.type.location
+id: node.location.field_postal_code
+field_name: field_postal_code
+entity_type: node
+bundle: location
+label: 'Postal Code'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,24 @@
+uuid: 1d061380-f79d-457f-8cdc-9a19182004c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topic
+    - node.type.health_resource
+    - taxonomy.vocabulary.health_topic
+id: node.health_resource.field_topic
+field_name: field_topic
+entity_type: node
+bundle: health_resource
+label: Topic
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      health_topic: health_topic
+field_type: entity_reference

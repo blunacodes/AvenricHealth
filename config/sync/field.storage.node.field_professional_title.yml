@@ -1,0 +1,21 @@
+uuid: d031f6fb-1a88-4419-bad6-c8f7f341834e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_professional_title
+field_name: field_professional_title
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
