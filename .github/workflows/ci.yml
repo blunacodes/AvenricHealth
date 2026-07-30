@@ -52,15 +52,16 @@ jobs:
 
       - name: Install Drupal site
         run: |
-          vendor/bin/drush site:install standard \
+          if compgen -G "config/sync/*.yml" > /dev/null; then
+            EXISTING_CONFIG=--existing-config
+          else
+            EXISTING_CONFIG=
+          fi
+          vendor/bin/drush site:install standard $EXISTING_CONFIG \
             --db-url=mysql://root:root@127.0.0.1/drupal \
             --site-name="Avenric Health CI" \
             --account-pass=admin \
             -y
-
-      - name: Validate configuration import
-        if: hashFiles('config/sync/*.yml') != ''
-        run: vendor/bin/drush config:import -y
 
       - name: Run PHPUnit
         if: hashFiles('web/modules/custom/**/tests/**') != ''
