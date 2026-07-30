@@ -95,6 +95,12 @@ ddev exec phpstan analyse              # static analysis
 ddev exec phpunit                      # automated tests (once test suites exist)
 ```
 
+## Continuous integration
+
+Every push to `main` and every pull request runs the same checks above (composer validate,
+PHPCS, PHPStan, PHPUnit) plus a from-scratch Drupal install against a real database, via
+[`.github/workflows/ci.yml`](.github/workflows/ci.yml). A feature isn't merged if CI fails.
+
 ## Architecture overview
 
 See [`docs/architecture.md`](docs/architecture.md) (in progress). In short: structured content
