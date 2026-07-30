@@ -20,6 +20,10 @@
 *.sql
 *.sql.gz
 
+# Internal working docs - kept locally, not published to the public repo.
+# README.md at the repo root is intentionally NOT covered by this rule.
+/docs/*.md
+
 # OS / editor cruft.
 .DS_Store
 .idea/
