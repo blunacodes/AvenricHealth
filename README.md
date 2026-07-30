@@ -44,6 +44,17 @@ ddev drush site:install standard --existing-config -y
 Visit the site at the URL DDEV prints (`ddev describe` shows it any time), typically
 `https://avenric-health.ddev.site`.
 
+### Logging in locally
+
+`site:install` doesn't print reusable admin credentials. Get a one-time login link instead:
+
+```bash
+ddev drush uli
+```
+
+This prints a URL that logs you in as the site's admin user (uid 1). The link expires after
+one use / a short time window, so run it again whenever you need a fresh one.
+
 ## DDEV commands
 
 | Command | Purpose |
